@@ -10,6 +10,7 @@ body{
 .wrapper {
     width: 62.5vw;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 /*--------------------HEADER-----------------------*/
@@ -18,8 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3.52vw;
-    padding-bottom: 3.52vw;
+    padding-top: 3.52vh;
+    padding-bottom: 3.52vh;
 }
 
 .header-left, .header-right {
@@ -30,14 +31,13 @@ header {
 .header-title {
     margin-left: 1.35vw;
     font-family: 'PT Sans';
-    font-size: 1.6vw;
-    line-height: 1.85vw;
+    font-size: 2.48vh;
+    line-height: 1.85vh;
 }
 
 .header-phone {
     font-family: 'PT Sans';
-    font-size: 1.48vw;
-    line-height: 1.94;
+    font-size: 2.48vh;
     margin-left: 0.47vw;
 }
 
@@ -46,6 +46,106 @@ header {
     padding: 0.5vw;
 }
 
+/* -----------------DESCRIPTION-------------------- */
+
+.description {
+    margin-top: 4.35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-left {
+    padding-top: 4.26vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-title {
+    font-size: 5.55vh;
+    line-height: 5.93vh;
+    color: white;
+    font-family: 'Gilroy';
+    max-width: 33.13vw;
+}
+
+.description-menu {
+    max-width: 19.53vw;
+    margin-top: 5.37vh;
+}
+
+.description-menu-item {
+    margin-left: 0.78vw;
+}
+
+.description-product, .description-goods {
+    margin-top: 2.22vh;
+}
+
+.description-product, .description-company {
+    margin-bottom: 2.22vh;
+}
+
+.description-menu-content span {
+    font-size: 1.89vh;
+    line-height: 1.89vh;
+    margin-left: 0.78vw;
+    font-family: 'PT Sans';
+}
+
+.description-menu-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 4.07vh;
+}
+
+.description-menu-line {
+    height: 1px;
+    background: linear-gradient(to right, #4B4B4B, #26262500);
+}
+
+.description-menu-footer {
+    display: flex;
+    margin-bottom: 2.96vh;
+}
+
+.description-menu-footer-item {
+    width: 31px;
+    height: 2px;
+}
+
+.description-menu-footer-item:not(:first-child) {
+    margin-left: 0.93vw;
+}
+
+.description-right {
+    position: relative;
+}
+
+.description-price {
+    font-family: 'PT Sans';
+    font-size: 2.22vh;
+    line-height: 2.22vh;
+    padding: 1.38vh;
+    background-color: #FF7028;
+    color: white;
+    position: absolute;
+    top: 28.43vh;
+    left: 6.3vw;
+}
+
+.description-tap {
+    max-height: 51.11vh;
+    display: block;
+}
+
+/* -------------------FONTS------------------------ */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(content/font/gilroy-regular.ttf);
+}
 
 /*--------------------COLORS-----------------------*/
 
@@ -55,6 +155,10 @@ header {
 
 .light-gray-2 {
     color: #939393;
+}
+
+.light-gray-3 {
+    color: #BEBEBE;
 }
 
 .gray-border {
@@ -69,8 +173,8 @@ header {
     color: #151716;
 }
 
-.gray {
-    color: #BEBEBE;
+.gray-back {
+    background-color: #575757;
 }
 
 .orange-back {
