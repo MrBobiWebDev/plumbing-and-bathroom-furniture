@@ -10,7 +10,6 @@ body{
 .wrapper {
     width: 62.5vw;
     margin: 0 auto;
-    /* border: 1px solid black; */
 }
 
 /*--------------------HEADER-----------------------*/
@@ -100,9 +99,10 @@ header {
     min-height: 4.07vh;
 }
 
-.description-menu-line {
+.line {
     height: 1px;
     background: linear-gradient(to right, #4B4B4B, #26262500);
+    max-width: 19.53vw;
 }
 
 .description-menu-footer {
@@ -123,7 +123,7 @@ header {
     position: relative;
 }
 
-.description-price {
+.price-button {
     font-family: 'PT Sans';
     font-size: 2.22vh;
     line-height: 2.22vh;
@@ -131,6 +131,9 @@ header {
     background-color: #FF7028;
     color: white;
     position: absolute;
+}
+
+.description-price {
     top: 28.43vh;
     left: 6.3vw;
 }
@@ -214,6 +217,7 @@ header {
     margin-top: 7.41vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 9.25vh;
 }
 
 .products-title {
@@ -226,6 +230,7 @@ header {
 .products {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     margin-top: 2.59vh;
 }
 
@@ -250,10 +255,84 @@ header {
     left: 1.25vw;
 }
 
-.description-menu-line {
+.product-line {
     position: absolute;
-    height: 10px;
-    background: linear-gradient(to right, #4B4B4B, #26262500);
+    height: 1px;
+    width: 80%; /* или сколько нужно */
+    background: #FFFFFF33;
+    bottom: 6.11vh; /* подними чуть выше текста */
+    left: 1.25vw;
+}
+
+/* ----------------COLLECTIONS---------------------- */
+
+.collections {
+    display: flex;
+}
+
+.collections > *, .collections-img{
+    width: 50vw;
+}
+
+.collections-img > img{
+    max-height: 70.57vh;
+}
+
+.collections-img {
+    position: relative;
+}
+
+.collections-content {
+    margin-right: 3.65vw;
+    margin-left: 18.75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collections-top-text {
+    font-family: 'PT Sans';
+    font-size: 1.6vh;
+    line-height: 2.59vh;
+}
+
+.collections-top-title {
+    margin-top: 6.2vh;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+}
+
+.collections-all {
+    margin-top: 2.4vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.collections-all > span {
+    font-family: 'PT Sans';
+    font-size: 1.48vh;
+    line-height: 2.22vh;
+    margin-left: 0.78vw;
+}
+
+.collections-img-title {
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 1.6vh;
+    line-height: 3.2vh;
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 7.04vh;
+    left: 4.11vw;
+}
+
+.collections-button {
+    top: 10.55vh;
+    left: 4.11vw;
 }
 
 /* -------------------FONTS------------------------ */
