@@ -10,7 +10,7 @@ body{
 .wrapper {
     width: 62.5vw;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /*--------------------HEADER-----------------------*/
@@ -140,6 +140,122 @@ header {
     display: block;
 }
 
+/* ----------------DESCRIPTION-INTRO---------------- */
+
+.description-intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.description-intro > div {
+    margin-top: 7.59vh;
+    margin-bottom: 7.59vh;
+}
+
+.intro-orange {
+    font-family: 'PT Sans';
+    font-size: 1.67vh;
+    line-height: 2.5vh;
+    max-width: 38.73vw;
+}
+
+.intro-orange-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-first-letter {
+    line-height: 3.98vh;
+    font-size: 5vh;
+}
+
+.intro-orange-content-text {
+    max-width: 26.82vw;
+    margin-left: 0.36vw;
+}
+
+.intro-orange p {
+    max-width: 30.73vw;
+}
+
+.intro-first-title {
+    font-weight: bold;
+}
+
+.intro-features {
+    max-width: 20.5vw;
+}
+
+.intro-feature {
+    display: flex;
+    align-items: start;
+    max-width: 21.2vw;
+}
+
+.intro-feature-content-title {
+    font-weight: bold;
+    color: black!important;
+    font-size: 1.48vh;
+}
+
+.intro-feature-content {
+    font-family: 'PT Sans';
+    font-size: 1.38vh;
+    line-height: 1.85vh;
+    color: #7B7B7B;
+    margin-left: 1.48vw;
+    max-width: 13.1vw;
+}
+
+/* ------------------PRODUCTS---------------------- */
+
+.products-container {
+    margin-top: 7.41vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.products-title {
+    font-family: 'Gilroy';
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    color: #151716;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.59vh;
+}
+
+.product {
+    position: relative;
+}
+
+.product > img {
+    max-width: 33.6vh;        
+    max-height: 40vh;           
+    display: block;
+}
+
+.product-name {
+    color: white;
+    font-weight: 700;
+    font-family: 'Gilroy';
+    font-size: 1.85vh;
+    line-height: 2.3vh;
+    position: absolute;
+    bottom: 2.04vh;
+    left: 1.25vw;
+}
+
+.description-menu-line {
+    position: absolute;
+    height: 10px;
+    background: linear-gradient(to right, #4B4B4B, #26262500);
+}
+
 /* -------------------FONTS------------------------ */
 
 @font-face {
@@ -177,8 +293,16 @@ header {
     background-color: #575757;
 }
 
+.orange {
+    color: #FE5B00;
+}
+
 .orange-back {
     background-color: #FE5B00;
+}
+
+.light-gray-back {
+    background-color: #F6F6F6;
 }
 
 .dark-gray {
