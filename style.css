@@ -125,15 +125,15 @@ header {
 
 .price-button {
     font-family: 'PT Sans';
-    font-size: 2.22vh;
-    line-height: 2.22vh;
-    padding: 1.38vh;
     background-color: #FF7028;
     color: white;
-    position: absolute;
 }
 
 .description-price {
+    font-size: 2.22vh;
+    line-height: 2.22vh;
+    padding: 1.38vh;
+    position: absolute;
     top: 28.43vh;
     left: 6.3vw;
 }
@@ -149,6 +149,25 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.tap-bottom-wrapper {
+    width: 62.5vw;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.tap-img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.tap-img img {
+    max-height: 5.27vh;
 }
 
 .description-intro > div {
@@ -331,10 +350,163 @@ header {
 }
 
 .collections-button {
+    position: absolute;
+    font-size: 2.22vh;
+    line-height: 2.22vh;
+    padding: 1.38vh;
     top: 10.55vh;
     left: 4.11vw;
 }
 
+/* --------------------GOODS------------------------ */
+
+.goods {
+    margin-bottom: 30px;
+}
+
+.goods-title {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    margin-top: 7.4vh;
+    margin-bottom: 1.85vh;
+}
+
+.goods-items > * {
+    border: 1px solid #ececec;
+    max-width: 15.6vw;
+    width: 100%;
+}
+
+.goods-items {
+    display: flex;
+}
+
+.good {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discount-button {
+    position: absolute;
+    font-size: 1.48vh;
+    line-height: 1.85vh;
+    font-weight: 700;
+    padding: 0.74vh 0.57vw;
+    right: 0
+}
+
+.good-img > img {
+    max-height: 17.4vh;
+    margin: 1.85vh;
+}
+
+.good-img > span {
+    margin: 1.1vh;  
+}
+
+.good-img {
+    display: flex;
+    align-items: start;
+    position: relative;
+}
+
+.good-description {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 1.48vh;
+    line-height: 2.04vh;
+    max-width: 11.5vw;
+    margin: 1.04vw;
+}
+
+.good-price {
+    margin-left: 1.04vw;
+    margin-bottom: 2.22vh;
+    display: flex;
+    align-items: center;
+    gap: 0.46vw;
+}
+
+.good-price-discount {
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 1.85vh;
+    line-height: 1.85vh;
+}
+
+.good-price-original {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 1.48vh;
+    line-height: 1.48vh;
+    text-decoration: line-through;
+    color: #A5A5A5;
+}
+
+/*------------------ADVENTAGES--------------------- */
+
+.adventages {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 49.94vw;
+}
+
+.adventages-title {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 2.96vh;
+    line-height: 3.33vh;
+    margin: 0 auto;
+    margin-top: 6.48vh;
+    margin-bottom: 5vh;
+}
+
+.adventages-items {
+    margin: 0 auto;
+    margin-bottom: 7.4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 14.68vw;
+}
+
+.adventage img {
+    height: 8.3vh;
+}
+
+.adventage-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adventage-title {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 1.85vh;
+    line-height: 2.13vh;
+    margin-top: 2.22vh;
+}
+
+.adventage-description {
+    text-align: center;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    font-size: 1.38vh;;
+    line-height: 1.85vh;
+    color: #7b7b7b;
+    margin-top: 1vh;
+}
 /* -------------------FONTS------------------------ */
 
 @font-face {
